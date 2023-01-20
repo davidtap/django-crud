@@ -26,7 +26,7 @@ urlpatterns = [
     path('tasks/create/',views.create_task,name="create_task"),
     path('tasks/<int:task_id>/',views.task_detail,name="task_detail"), #<> para enviar parametro por url
     path('tasks/<int:task_id>/complete',views.task_complete,name="task_complete"), 
-     path('tasks/<int:task_id>/delete',views.task_complete,name="task_delete"), 
+    path('tasks/<int:task_id>/delete',views.task_complete,name="task_delete"), 
     path('logout/',views.signout,name="logout"),
     path('signin/',views.signin,name="signin")
 ]
